@@ -438,6 +438,8 @@ class _SearchPageState<T> extends State<_SearchPage<T>> {
             controller: queryTextController,
             focusNode: widget.delegate._focusNode,
             style: theme.textTheme.title,
+            // pull request a google
+            keyboardType: TextInputType.number,
             textInputAction: TextInputAction.search,
             onSubmitted: (String _) {
               widget.delegate.showResults(context);
